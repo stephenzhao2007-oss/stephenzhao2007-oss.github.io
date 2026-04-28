@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <title>Stephen Zhao | Portfolio</title>
     <style>
-        body { font-family: monospace; line-height: 1.5; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
+        body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background-color: #fcfcfc; }
         a { color: #d32f2f; text-decoration: none; border-bottom: 1px solid #ddd; }
-        a:hover { border-bottom: 1px solid #d32f2f; }
-        .section { margin-top: 40px; color: #666; font-weight: bold; border-bottom: 1px solid #eee; }
-        .item { margin-top: 15px; }
-        .date { color: #888; font-size: 0.9em; }
-        .meta { color: #444; font-size: 0.95em; margin-bottom: 5px; }
+        a:hover { border-bottom: 1px solid #d32f2f; background-color: #fff8f8; }
+        .section { margin-top: 40px; color: #555; font-weight: bold; border-bottom: 2px solid #eee; text-transform: uppercase; letter-spacing: 1px; }
+        .item { margin-top: 20px; }
+        .date { color: #888; font-size: 0.9em; float: right; }
+        .meta { color: #444; font-size: 0.95em; margin-top: 5px; display: block; }
+        ul { margin-top: 5px; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        h1 { margin-bottom: 10px; border-bottom: 4px solid #d32f2f; display: inline-block; }
     </style>
 </head>
 <body>
@@ -23,47 +26,81 @@
     </p>
 
     <div class="section">// education</div>
+    
     <div class="item">
-        <strong>University of Waterloo</strong> — Computer Science (Co-op)<br>
-        <span class="date">2025 — Present</span><br>
-        <span class="meta">Relevant Coursework: CS 136 (C, Data Structures, Algorithms), CS 135 (Functional Programming)</span>
-    </div>
-
-    <div class="section">// experience</div>
-    <div class="item">
-        <strong>SGGG Fund Services Inc.</strong> — Technical Analyst<br>
-        <span class="date">June 2025 — August 2025</span><br>
-        <span class="meta">Deployed 24+ enterprise systems; managed network integration via Linux scripts and Cisco VPN; evaluated MFA security protocols for bank-grade integration.</span>
+        <span class="date">2025 — Present</span>
+        <strong>University of Waterloo</strong><br>
+        <span class="meta">Candidate for Bachelor of Computer Science (B.CS), Co-op Program</span>
+        <ul>
+            <li>Relevant Coursework: CS 136 (Imperative Programming in C), CS 135 (Functional Programming), MATH 138 (Calculus 2), MATH 136 (Linear Algebra).</li>
+        </ul>
     </div>
 
     <div class="item">
-        <strong>Intellect Design Arena</strong> — Technical Intern<br>
-        <span class="date">July 2024 — August 2024</span><br>
-        <span class="meta">Conducted API validation and auditing; engineered logic-based workflows to accelerate client onboarding.</span>
+        <span class="date">2021 — 2025</span>
+        <strong>Parkdale Collegiate Institute</strong><br>
+        <span class="meta">International Baccalaureate (IB) Diploma Program</span>
+        <ul>
+            <li>Graduated with High Honours; specialized in advanced Mathematics and Physics.</li>
+            <li>Ontario Volunteer Service Award Recipient (2025).</li>
+        </ul>
     </div>
 
-    <div class="section">// projects</div>
-    <div class="item">
-        <strong>Memory Management System</strong> — C / Systems<br>
-        <span class="date">March 2026</span><br>
-        <span class="meta">Implemented a custom 'malloc' and 'free' library in C using linked lists and pointer arithmetic to optimize memory heap allocation.</span>
-    </div>
+    <div class="section">// technical experience</div>
 
     <div class="item">
-        <strong>Math & Physics Olympiad Club</strong> — Founder / Lead<br>
-        <span class="date">2024 — 2025</span><br>
-        <span class="meta">Mentored 12+ students to Distinction awards in Waterloo Math Contests.</span>
-    </div>
-
-    <div class="section">// athletics & leadership</div>
-    <div class="item">
-        <strong>Team Canada</strong> — Silver Medalist (Shaolin Wushu)<br>
-        <span class="meta">Represented Canada at the 12th Zhengzhou International Festival. Currently training for the 14th International Festival (Oct 2026).</span>
+        <span class="date">Jun 2025 — Aug 2025</span>
+        <strong>SGGG Fund Services Inc.</strong> — Technical & Hardware Support Analyst<br>
+        <ul>
+            <li>Researched and evaluated bank-grade two-step MFA protocols for enterprise integration.</li>
+            <li>Configured 24+ enterprise laptops with Cisco VPN/Network integration and custom Linux mapping scripts.</li>
+            <li>Managed hardware lifecycle for 80+ units, ensuring data security compliance during disposal.</li>
+        </ul>
     </div>
 
     <div class="item">
-        <strong>STQI Toronto</strong> — Martial Arts Instructor<br>
-        <span class="meta">Instructed 100+ students; directed choreography for large-scale public performances (Toronto Dragon Festival).</span>
+        <span class="date">Jul 2024 — Aug 2024</span>
+        <strong>Intellect Design Arena Ltd</strong> — Technical Intern<br>
+        <ul>
+            <li>Conducted technical auditing of API documents, resolving specification discrepancies.</li>
+            <li>Documented logic-based workflows to streamline technical customer onboarding processes.</li>
+        </ul>
+    </div>
+
+    <div class="section">// leadership & projects</div>
+
+    <div class="item">
+        <span class="date">2024 — 2025</span>
+        <strong>Math and Physics Olympiad Club</strong> — Co-Founder / Lead<br>
+        <span class="meta">Academic Leadership</span>
+        <ul>
+            <li>Founded a competitive training hub; mentored 12+ students to achieve Distinction in Waterloo Math Contests (Pascal, Cayley, Fermat).</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <span class="date">March 2026</span>
+        <strong>Systems Programming & Memory Management</strong> — C / Academic<br>
+        <ul>
+            <li>Developed a custom heap management library in C using linked lists and manual pointer arithmetic.</li>
+            <li>Optimized data structures for O(log n) search and retrieval within constrained memory environments.</li>
+        </ul>
+    </div>
+
+    <div class="section">// distinctions & awards</div>
+    <div class="item">
+        <ul>
+            <li><strong>Silver Medalist:</strong> Team Canada, 12th Zhengzhou International Shaolin Wushu Festival.</li>
+            <li><strong>Waterloo Fermat Contest:</strong> Certificate of Distinction (2024).</li>
+            <li><strong>Waterloo Cayley Contest:</strong> Certificate of Distinction (2023).</li>
+            <li><strong>Honours Society:</strong> Four-year consecutive recipient (2021-2025).</li>
+        </ul>
+    </div>
+
+    <div class="section">// athletics</div>
+    <div class="item">
+        <strong>STQI Toronto</strong> — Martial Arts Instructor / International Competitor<br>
+        <span class="meta">Instructed 100+ students; directing national-level performance teams for public festivals.</span>
     </div>
 
     <p style="margin-top: 80px; text-align: center;"><a href="#">^^ back to top ^^</a></p>
